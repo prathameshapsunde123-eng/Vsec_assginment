@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');*{
+  box-sizing:border-box}
+  body{
+    margin:0;min-height:100vh;display:grid;place-items:center;padding:22px;background:radial-gradient(circle at top left,#dbeafe,transparent 45%),linear-gradient(135deg,#f0fdf4,#f8fafc);font-family:'DM Sans',Arial,sans-serif;color:#1f2937}
+    .card{
+      width:min(100%,600px);background:#ffffffed;padding:clamp(22px,5vw,38px);border:1px solid #ffffff;border-radius:22px;box-shadow:0 20px 60px #1e3a8a17}
+      h1{
+        font:700 clamp(2rem,5vw,2.7rem) 'Space Grotesk',sans-serif;margin:8px 0;color:#1d4ed8}
+        .eyebrow{
+          font-size:.72rem;letter-spacing:2px;font-weight:800;color:#0f9f79}
+          form{
+            display:grid;gap:15px;margin-top:22px}
+            label{
+              display:grid;gap:7px;font-weight:600}
+              input,select{
+                width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:9px;font:inherit;background:white}
+                input:focus,select:focus{
+                  outline:2px solid #bfdbfe;border-color:#2563eb}
+                  button{
+                    padding:13px;background:linear-gradient(100deg,#2563eb,#0f9f79);color:white;border:0;border-radius:9px;font-weight:700;cursor:pointer}
+                    #message{
+                      margin-bottom:0;font-weight:600;line-height:1.5}
+                      .success{
+                        color:#15803d}
+                        .error{
+                          color:#b91c1c}

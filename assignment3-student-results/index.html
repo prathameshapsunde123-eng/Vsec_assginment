@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Prathamesh Apsunde | Student Result Management
+    </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="container">
+      <p class="eyebrow">
+        INFORMATION TECHNOLOGY PRACTICAL
+      </p>
+      <h1>
+        Student Result Management System
+      </h1>
+      <p class="intro">
+        Built by Prathamesh Baban Apsunde · Enter marks out of 100 for each subject.
+      </p>
+      <form id="resultForm" class="panel">
+        <div class="fields">
+          <label>
+            Student name
+            <input id="name" required>
+          </label>
+          <label>
+            Roll number
+            <input id="roll" required>
+          </label>
+          <label>
+            Department
+            <input id="dept" required>
+          </label>
+        </div>
+        <h2>
+          Marks
+        </h2>
+        <div class="fields">
+          <label>
+            Subject 1
+            <input id="m1" type="number" min="0" max="100" required>
+          </label>
+          <label>
+            Subject 2
+            <input id="m2" type="number" min="0" max="100" required>
+          </label>
+          <label>
+            Subject 3
+            <input id="m3" type="number" min="0" max="100" required>
+          </label>
+        </div>
+        <button type="submit">
+          Add Student Result
+        </button>
+        <p id="error" role="alert">
+        </p>
+      </form>
+      <section class="panel">
+        <h2>
+          Student Records
+        </h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Roll
+                </th>
+                <th>
+                  Department
+                </th>
+                <th>
+                  Total / 300
+                </th>
+                <th>
+                  Percentage
+                </th>
+              </tr>
+            </thead>
+            <tbody id="records">
+            </tbody>
+          </table>
+        </div>
+        <h3 id="topper">
+          Topper: —
+        </h3>
+      </section>
+      <footer>
+        Prathamesh Apsunde · MVPS’s KBT College of Engineering, Nashik
+      </footer>
+    </main>
+    <script src="script.js">
+    </script>
+  </body>
+</html>

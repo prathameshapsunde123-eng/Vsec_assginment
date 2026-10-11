@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Prathamesh Apsunde | Employee Registration
+    </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="card">
+      <p class="eyebrow">
+        FORM VALIDATION PRACTICAL
+      </p>
+      <h1>
+        Employee Registration
+      </h1>
+      <p>
+        Created by Prathamesh Baban Apsunde · Enter the employee details below.
+      </p>
+      <form id="employeeForm" novalidate>
+        <label>
+          Full name
+          <input id="name" required minlength="2" placeholder="e.g. Asha Patil">
+        </label>
+        <label>
+          Email address
+          <input id="email" type="email" required placeholder="name@example.com">
+        </label>
+        <label>
+          Password
+          <input id="password" type="password" required minlength="8" placeholder="At least 8 characters">
+        </label>
+        <label>
+          Phone number
+          <input id="phone" type="tel" required placeholder="10-digit Indian mobile number">
+        </label>
+        <label>
+          Department
+          <select id="department" required>
+            <option value="">
+              Select department
+            </option>
+            <option>
+              Information Technology
+            </option>
+            <option>
+              Human Resources
+            </option>
+            <option>
+              Finance
+            </option>
+            <option>
+              Sales
+            </option>
+            <option>
+              Operations
+            </option>
+          </select>
+        </label>
+        <button type="submit">
+          Register Employee
+        </button>
+        <p id="message" role="status">
+        </p>
+      </form>
+    </main>
+    <script src="script.js">
+    </script>
+  </body>
+</html>

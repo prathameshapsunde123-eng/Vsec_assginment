@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');*{
+  box-sizing:border-box}
+  body{
+    margin:0;background:linear-gradient(135deg,#f0fdf4,#f5f7ff);color:#172b4d;font-family:'DM Sans',Arial,sans-serif}
+    .wrap{
+      max-width:1100px;margin:30px auto;padding:18px}
+      header{
+        padding:20px 4px}
+        header span{
+          font-size:12px;letter-spacing:2px;font-weight:800;color:#0f9f79}
+          h1{
+            font:700 clamp(2.2rem,5vw,3.3rem) 'Space Grotesk',sans-serif;margin:8px 0}
+            header p{
+              color:#607089}
+              .summary{
+                display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+                .summary div,.panel{
+                  background:#fff;padding:22px;border:1px solid #e4ebe7;border-radius:16px;box-shadow:0 8px 25px #17365d08}
+                  .summary div{
+                    background:linear-gradient(145deg,#fff,#f2fbf6)}
+                    .summary p{
+                      margin:0;color:#607089}
+                      .summary h2{
+                        font:700 1.7rem 'Space Grotesk',sans-serif;margin-bottom:0}
+                        .panel{
+                          margin:16px 0}
+                          .panel h2{
+                            font-family:'Space Grotesk',sans-serif}
+                            form.panel{
+                              display:grid;gap:12px}
+                              .panel label{
+                                display:grid;gap:6px;font-weight:600;margin:5px 0}
+                                input,select{
+                                  padding:11px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}
+                                  input:focus,select:focus{
+                                    outline:2px solid #bbf7d0;border-color:#0f9f79}
+                                    button{
+                                      background:#0f9f79;color:white;padding:11px 14px;border:0;border-radius:8px;cursor:pointer;font-weight:700}
+                                      .barrow{
+                                        margin:17px 0}
+                                        .barrow>div:first-child{
+                                          display:flex;justify-content:space-between;gap:10px;margin-bottom:7px}
+                                          .barrow span{
+                                            color:#52657d}
+                                            .track{
+                                              height:10px;background:#e7edf4;border-radius:20px;overflow:hidden}
+                                              .bar{
+                                                height:100%;background:linear-gradient(90deg,#10b981,#34d399);border-radius:20px;transition:width .25s}
+                                                .tablewrap{
+                                                  overflow-x:auto}
+                                                  table{
+                                                    width:100%;border-collapse:collapse}
+                                                    td,th{
+                                                      text-align:left;padding:12px;border-bottom:1px solid #e5eaf0;white-space:nowrap}
+                                                      th{
+                                                        color:#52657d;background:#f8fafc}
+                                                        .delete{
+                                                          background:#fee2e2;color:#991b1b;padding:8px 10px}
+                                                          @media(max-width:650px){
+                                                            .wrap{
+                                                              padding:12px}
+                                                              .summary{
+                                                                grid-template-columns:1fr}
+                                                                .barrow>div:first-child{
+                                                                  align-items:flex-start;flex-direction:column}
+                                                                }
